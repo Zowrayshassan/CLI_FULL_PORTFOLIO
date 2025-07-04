@@ -150,7 +150,7 @@ const Terminal = () => {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
                 className="bg-transparent outline-none w-full text-gray-400 py-1 animate-pulse"
-                placeholder={isTyping ? 'processing...' : 'Type a command... (try `help`)' }
+                placeholder={isTyping ? 'processing...' : 'Type...| help' }
                 disabled={isTyping}
                 autoFocus
               />
@@ -159,11 +159,11 @@ const Terminal = () => {
           </motion.div>
         </div>
 
-        <div className="w-full md:w-1/2 flex items-center justify-center ml-20 mt-6 md:mt-0">
+        <div className="w-full md:w-1/2 flex items-center justify-center mt-6 md:mt-0">
           <motion.img
             src={HeroImg}
             alt="Zowrays Hassan"
-            className=""
+            className="h-auto"
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1.2 }}
