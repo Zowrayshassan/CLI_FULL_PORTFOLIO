@@ -143,16 +143,16 @@ export default function Projects() {
     setInput('');
   };    
 
-  return (
-    <motion.section
-   
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    viewport={{ amount: 0.3 }}  // 👈 animate every time it scrolls into view
-    transition={{ duration: 0.6 }}
-    className="p-4 md:p-8 max-w-2xl mx-auto"
-  >
-  
+    return (
+      <motion.section
+      id='projects'
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ amount: 0.3 }}  // 👈 animate every time it scrolls into view
+      transition={{ duration: 0.6 }}
+      className="p-4 md:p-8 max-w-2xl mx-auto"
+    >
+    
       <h1 className="text-center text-3xl font-bold mb-6">MY PROJECTS</h1>
       <div className=" bg-black border  border-green-500 rounded-lg p-4 min-h-[75vh] shadow-md">
         <div className="text-green font-bold mb-2">~/Projects Terminal</div>
