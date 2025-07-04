@@ -1,0 +1,13 @@
+.terminal-glitch {
+    animation: glitch 1s infinite;
+  }
+  
+  @keyframes glitch {
+    0% { text-shadow: 1px 0 red; }
+    20% { text-shadow: -1px 0 blue; }
+    40% { text-shadow: 1px 1px green; }
+    60% { text-shadow: 0 0 red; }
+    80% { text-shadow: -1px -1px blue; }
+    100% { text-shadow: 1px 1px green; }
+  }
+  
